@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { RformComponent } from './rform/rform.component';
 import { TformComponent } from './tform/tform.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { TformComponent } from './tform/tform.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TformComponent implements OnInit {
 
+  onSubmit(data: string){
+    console.log(data);
+  }
+
+  userData={
+    uid:'001'
+  }
   constructor() { }
 
   ngOnInit(): void {
