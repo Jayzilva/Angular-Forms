@@ -1,1 +1,18 @@
+<div class=" container">
 <h1>Reactive Form</h1>
+<form [formGroup]="loginForm" (ngSubmit)="submitData()" >
+<div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control"  formControlName="username" placeholder="Name" name="username" >
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Password</label>
+    <input type="text" class="form-control"  formControlName="password" placeholder="Name" name="password" >
+</div>
+
+<div class="mb-3">
+    <button class="btn btn-primary" type="submit">Login</button>
+</div>
+</form>
+</div>

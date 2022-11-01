@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms'
 
 @Component({
   selector: 'app-rform',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RformComponent implements OnInit {
 
+  loginForm = new FormGroup({
+    username : new FormControl(''),
+    password : new FormControl('')
+  })
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  submitData(){
+    console.log(this.loginForm.value);
   }
 
 }
